@@ -9,13 +9,15 @@ public class MainActivity extends AppCompatActivity {
 
     private int countBall = 0;
     private int countStrike = 0;
-    private TextView BallView;
-    private TextView StrikeView;
-
+    TextView BallView;
+    TextView StrikeView;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BallView = (TextView)findViewById(R.id.BallView);
+        StrikeView = (TextView)findViewById(R.id.StrikeView);
     }
 
     public void ballClicked(View view) {
